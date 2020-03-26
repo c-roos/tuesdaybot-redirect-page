@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TBot Auth</title>
+    </head>
+    <body>
+        <p id="state"></p>
+        <p id="code"></p>
+    </body>
+    <script>
+        var url = new URL(window.location.href);
+        var state = url.searchParams.get("state");
+        var code = url.searchParams.get("code");
+        document.getElementById("state").innerHTML = "State: " + state;
+        document.getElementById("code").innerHTML = "Code: " + code;
+    </script>
+</html>
