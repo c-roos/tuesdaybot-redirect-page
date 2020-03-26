@@ -10,9 +10,7 @@
     </body>
     <script>
         var url = new URL(window.location.href);
-        var state = url.searchParams.get("state");
         var code = url.searchParams.get("code");
-        document.getElementById("state").innerHTML = "State: " + state;
         document.getElementById("code").innerHTML = "Code: " + code;
     </script>
 </html>
